@@ -1,0 +1,15 @@
+UID,Description,Unit,Qty,Expiration_Date,Vegitarian,Limit
+1,Carrots,Bunch,54,3/31/2020,Yes,3
+2,Beans - Pinto,Can,236,6/30/2021,Yes,2
+3,Beans - Refried,Can,124,3/20/2021,No,2
+4,Bread,Loaf,74,4/1/2020,Yes,1
+5,Ketchup,Bottle,96,12/20/2021,Yes,1
+6,Potatoes,Bag,45,4/6/2020,Yes,2
+7,Lettuce,Each,87,3/31/2020,Yes,1
+8,Onions,Bag,43,3/31/2020,Yes,5
+9,Rice,Bag,89,2/5/2021,Yes,1
+10,Beans - Pinto,Bag,432,1/4/2020,Yes,2
+11,Pasta,Bag,78,9/30/2020,Yes,2
+12,Sauce - Tomato,Can,68,5/30/2021,Yes,4
+13,Tomato,Each,88,3/31/2020,Yes,6
+14,Celery,Each,6,3/31/2020,Yes,3

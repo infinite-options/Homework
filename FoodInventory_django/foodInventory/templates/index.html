@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Food Inventory System</title>
+
+
+
+
+  	<link rel="stylesheet" href="{% static "css/index.css" %}">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Food Inventory System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+<div class="container">
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>UID</th>
+        <th>Description</th>
+        <th>Unit</th>
+        <th>Qty</th>
+        <th>Expiration Date</th>
+        <th>Vegitarian</th>
+        <th>Limit</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+
+       {% for item in items %}
+
+       {% if item.Expiration_Date < today %}
+         <tr>
+           <td style="color:red;">{{ item.UID }} </td>
+           <td style="color:red;">{{ item.Description }}</td>
+           <td style="color:red;">{{ item.Unit }} </td>
+
+           {% if item.Qty <= 0 %}
+            <td style="color:red;">Out of stock</td>
+           {%else%}
+           <td style="color:red;" >{{ item.Qty }}</td>
+            {% endif %}
+
+           <td style="color:red;">{{ item.Expiration_Date }} (Expired!)</td>
+           <td style="color:red;">{{ item.Vegitarian }}</td>
+           <td style="color:red;">{{ item.Limit }}</td>
+         </tr>
+       {%else%}
+
+         <tr>
+           <td>{{ item.UID }} </td>
+           <td>{{ item.Description }}</td>
+           <td>{{ item.Unit }} </td>
+           {% if item.Qty <= 0 %}
+            <td>Out of stock</td>
+           {%else%}
+           <td>{{ item.Qty }}</td>
+            {% endif %}
+           <td>{{ item.Expiration_Date }}</td>
+           <td>{{ item.Vegitarian }}</td>
+           <td>{{ item.Limit }}</td>
+         </tr>
+
+        {%endif%}
+
+       {% endfor %}
+
+
+     </tbody>
+   </table>
+
+</div>
+
+<hr>
+
+<div class="container">
+<form class="django-form" method="post">
+
+ <div class="form">
+   <label for="name" class="label-name">
+     <span class="content-name">Enter food UID </span>
+   </label>
+    {% csrf_token %}
+   {{form.Food_Select}}
+ </div>
+<br>
+ <div class="form">
+
+   <label for="name" class="label-name">
+     <span class="content-name">Enter how many you want to take </span>
+   </label>
+   {% csrf_token %}
+   {{form.Qty_Select}}
+ </div>
+
+ <input type="submit" class="btn btn-secondary" name="" value="Submit">
+</form>
+<br>
+</div>
+
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
