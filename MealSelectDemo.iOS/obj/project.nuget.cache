@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "mcyYN1a4nKL5rdhknHoeAr5D78D+W4Dq20wUlHTBEPKqiHpMGIB4JlESqb0W4bkLuz559GRNRi/w4EidDpC0cg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sean\\source\\repos\\Homework\\MealSelectDemo.iOS\\MealSelectDemo.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sean\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Sean\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}
