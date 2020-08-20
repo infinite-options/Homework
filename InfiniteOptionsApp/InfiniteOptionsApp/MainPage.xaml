@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InfiniteOptionsApp.MainPage">
+    <StackLayout>
+        <Label Text="WELCOME TO BUTTON APP!" TextColor="RosyBrown" FontSize="30" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" />
+        <Grid Margin="50,90,50,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="5*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="button1" Text="1" Clicked="button1_Clicked" Grid.Column="0" Grid.Row="0" CornerRadius="30" BackgroundColor="Orchid" TextColor="White" FontSize = "60"/>
+            <Button x:Name="button2" Text="2" Clicked="button2_Clicked" Grid.Column="1" Grid.Row="0" CornerRadius="30" BackgroundColor="Orchid" TextColor="White" FontSize = "60"/>
+            <Button x:Name="button3" Text="3" Clicked="button3_Clicked" Grid.Column="0" Grid.Row="1" CornerRadius="30" BackgroundColor="Orchid" TextColor="White" FontSize = "60"/>
+            <Button x:Name="button4" Text="4" Clicked="button4_Clicked" Grid.Column="1" Grid.Row="1" CornerRadius="30" BackgroundColor="Orchid" TextColor="White" FontSize = "60"/>
+        </Grid>
+        <BoxView Color="Black" WidthRequest ="100" HeightRequest="1" Margin="10"/>
+        <Label x:Name="label" Text="$ Amount" HorizontalOptions="CenterAndExpand" Margin="20" FontSize="40" FontAttributes="Bold" />
+        <BoxView Color="Black" WidthRequest ="100" HeightRequest="1" Margin="10"/>
+        
+
+    </StackLayout>
+    
+
+</ContentPage>

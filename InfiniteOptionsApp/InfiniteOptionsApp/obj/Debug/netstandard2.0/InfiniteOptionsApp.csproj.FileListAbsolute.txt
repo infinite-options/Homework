@@ -1,0 +1,14 @@
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\bin\Debug\netstandard2.0\InfiniteOptionsApp.deps.json
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\bin\Debug\netstandard2.0\InfiniteOptionsApp.dll
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\bin\Debug\netstandard2.0\ref\InfiniteOptionsApp.dll
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\bin\Debug\netstandard2.0\InfiniteOptionsApp.pdb
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\InfiniteOptionsApp.AssemblyInfoInputs.cache
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\InfiniteOptionsApp.AssemblyInfo.cs
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\InfiniteOptionsApp.csproj.CoreCompileInputs.cache
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\InfiniteOptionsApp.dll
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\ref\InfiniteOptionsApp.dll
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\InfiniteOptionsApp.pdb
+C:\Users\andyt\source\repos\InfiniteOptionsApp\InfiniteOptionsApp\InfiniteOptionsApp\obj\Debug\netstandard2.0\InfiniteOptionsApp.csprojAssemblyReference.cache
