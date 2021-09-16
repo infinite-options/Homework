@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../SupplierContainer/SupplierContianer.css"
 import Grid from '@material-ui/core/Grid';
 import SearchIcon from '@material-ui/icons/Search';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import Paper from "@material-ui/core/Paper";
 import axios from "axios";
 import Box from '@material-ui/core/Box';
@@ -79,7 +80,10 @@ export default function SupplierContainer() {
                 return(
                    
                         <div style={{display:'flex', flexDirection:'column', margin:'1rem', textAlign:'left'}} >
+                            <div style={{display:'flex', justifyContent:'flex-end'}}>
                             <img  src={item.item_photo} style={{ width:'12rem', height:'10rem',backgroundColor:'#EAEAEA', borderRadius:'12px'}}/>
+                            <FavoriteBorderIcon style={{position:'absolute', padding:'0.5rem'}}/>
+                            </div>
                             <div style={{fontFamily:'SF Compact Heavy', marginTop:'1rem', fontSize:'18px'}}>  { item.item_name} </div>
                             <div  style={{fontFamily:'SF Compact', marginTop:'1rem'}}> {item.item_info}</div>
                             </div>

@@ -10,7 +10,7 @@ export default function Suppliers() {
             <div style={{flex:'1'}}>
             <Categories/>
             </div>
-            <div style={{flex:'2'}}>
+            <div style={{flex:'2' , marginRight:"1000px"}}>
             <SupplierContainer/>
             </div>
         </div>
