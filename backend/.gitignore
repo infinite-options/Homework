@@ -1,0 +1,6 @@
+db/app.db
+
+.DS_Store
+
+Pipfile
+Pipfile.lock
