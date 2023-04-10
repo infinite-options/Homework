@@ -2,15 +2,9 @@ from flask_restful import Resource
 from sqlite3 import Error
 from db.config import create_connection
 
+
 class PostsApi(Resource):
     def get(self):
-        """API to return the records to be displayed on the home page
-        get:
-            summary: posts endpoint.
-            description: Get all posts along with their users.
-            responses:
-                200: json list.
-        """
         posts = []
         try:
             query = """SELECT posts.id as id, posts.name as name, rating, comment,

@@ -1,12 +1,3 @@
-"""
-Contains functions for creating the api routes.
-
-Functions:
-
-    home() -> template
-    all_posts() -> json
-    select_all_posts() -> list
-"""
 from flask import Flask
 from flask_restful import Api
 from db.config import init_db
