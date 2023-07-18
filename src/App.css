@@ -1,0 +1,230 @@
+.App-header{
+  background-color: #2A2E31;
+  height: 80px;
+  width: 100%;
+  margin-top: .5%;
+}
+
+.App-title{
+  font-family: 'Poker';
+  color: white;
+  margin-top: auto;
+  letter-spacing: 5px;
+  font-size:larger;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.hamburger, .cancel{
+  float:right;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+}
+
+.hamburger:hover{
+  cursor: grab;
+}
+
+.hamburger:active{
+  animation: click .5s;
+}
+
+.burger, .cross{
+  width: 2rem;
+  height: 0.25rem;
+  border-radius:10px;
+  background-color: aliceblue;
+  transform-origin: 1px;
+}
+
+.line-1{
+  transform: rotate(45deg);
+}
+.line-2{
+  transform: rotate(-45deg);
+}
+
+.main-menu-items{
+  background-image: url('./images/main-menu-bg.jpeg');
+  opacity: 0.7;
+  margin-top: .5%;
+  height: 100vh;
+}
+
+.main-menu-item{
+  background-color: aliceblue;
+  position: absolute;
+  height: 70px;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+.main-menu-item:hover{
+  background-color: rgba(79, 87, 95, 0.542);
+  color: aliceblue;
+  cursor: grab;
+}
+
+.heading-font{
+  font-family: menu-font;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.each-nav-item{
+  text-align: left;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.name{
+ margin-top: 5%; 
+}
+
+.options{
+  margin-top: 12%;
+}
+.ranking{
+  margin-top: 19%;
+}
+.style{
+  margin-top: 26%;
+}
+.type{
+  margin-top: 33%;
+}
+.position{
+  margin-top: 40%;
+}
+.player-style{
+  display:block;
+  margin-bottom: 100px;
+}  
+
+.style-image{
+  display: inline-block;
+  height: 50px;
+  width:50px;
+  margin-left: 50px;
+}
+
+.style-name{
+  display: inline-block;
+  height: 70px;
+  width: 80%;
+  text-align: center;
+}
+
+.style-change-button{
+  float:right;
+  margin-right: 100px;
+  /* display: inline-block; */
+  height:30px;
+  width:30px;
+  border-radius: 100%;
+  background-color: #f44336;
+}
+
+.choose-style-dialog{
+  height: 500px;
+  width:500px;
+  background-color: rgb(244, 207, 162);
+  margin: auto;
+}
+.change-style-btn{
+  height:50px;
+  width:400px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+
+.change-style-btn p{
+  text-align: center;
+  font-family: menu-font;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+}
+
+.player-style > p{
+  margin-left: 50px;
+}
+
+ .btn1{
+  background-color: #E28D7E;
+  margin-top: 50px;
+}
+
+.btn2{
+  background-color: #84827F;
+}
+
+.btn3{
+  background-color: #7ACEA8;
+}
+
+.btn4{
+  background-color: #7A94C9;
+}
+
+.return-home-btn{
+  height: 50px;
+  width: 500px;
+  background-color: #52A352;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 100px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.deal-btn{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(188, 42, 42);
+  border-radius: 50%;
+  margin-left: 30%;
+  transform: translateX(-50%);
+  transform: translateY(-150%);
+  color: white;
+}
+
+.deal-btn > .heading-font{
+  padding-top: .5em;
+}
+
+.each-profile-pk-main{
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-right: 50px;
+  margin-left: 70px;
+}
+
+.style-card-image{
+  display: inline-block;
+  height: 100px;
+  width: 80px;
+}
+
+@keyframes click {
+  20%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  
+}
